@@ -1,0 +1,116 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+#app-logo{
+    height: 50px;
+    width: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c81b9;
+    padding: 0px 20px;
+    
+}
+
+#navbar {
+    padding: 10px;
+    background-color: #6dcbd0;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    position: sticky;
+    top: 2%;
+}
+
+#navLink {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+#navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    transition: width 0.3s ease;
+  }
+
+  #navLink:hover::after {
+    width: 100%;
+  }
+
+ #form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+#nameLabel, 
+#emailLabel, 
+#messageLabel {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#name, 
+#email, 
+#message {
+    width: 100%;
+    padding: 10px;
+    /* border: 1px solid #000; */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #218821;
+}
+
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+     color: #6b7280;
+     bottom: 20px;
+     /* position: fixed;
+     
+     left: 38rem; */
+     font-size: large;
+     
+ }
+
+ 
+
+ 
